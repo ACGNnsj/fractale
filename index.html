@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<title>Document</title>
+<canvas id="canvas"></canvas>
+<script type="module">
+    import init from './fractal-egui-demo.js';
+    async function run() {
+        await init();
+    }
+    run();
+</script>
+</body>
+</html>
+
+<style>
+    html {
+        background-color: #1b1b1b;
+    }
+    #canvas {
+        height: 1024px;
+        width: 1024px;
+    }
+</style>
