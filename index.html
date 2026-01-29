@@ -10,18 +10,30 @@
 <canvas id="canvas"></canvas>
 <script type="module">
     import init from './fractal-egui-demo.js';
+
     async function run() {
         await init();
     }
+
     run();
 </script>
 </body>
 </html>
 
 <style>
-    html {
+    html, body {
         background-color: #1b1b1b;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #canvas {
         height: 1024px;
         width: 1024px;
